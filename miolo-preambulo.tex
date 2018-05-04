@@ -718,8 +718,11 @@ heading_prefix "{\\bfseries "
 heading_suffix "}\\nopagebreak\n"
 \end{filecontents*}
 
-%\usepackage[xindy]{imakeidx} % usando xindy
-\usepackage{imakeidx} % usando makeindex
+% "-C utf8" e um truque para contornar este bug, que existe em outras
+% distribuicoes tambem:
+% https://bugs.launchpad.net/ubuntu/+source/xindy/+bug/1735439
+\usepackage[xindy]{imakeidx} % usando xindy
+%\usepackage{imakeidx} % usando makeindex
 
 % Por padrão, o cabeçalho das páginas do índice é feito em maiúsculas;
 % vamos mudar isso e deixar fancyhdr definir a formatação

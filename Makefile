@@ -20,8 +20,8 @@ BIBTEX := biber
 # https://bugs.launchpad.net/ubuntu/+source/xindy/+bug/1735439
 # Se "-C utf8" nao funcionar, tente "-M lang/latin/utf8.xdy"
 #MAKEINDEX := texindy -C utf8 -M hyperxindy.xdy
-#MAKEINDEX := texindy -M lang/latin/utf8.xdy -M hyperxindy.xdy
-MAKEINDEX := makeindex -s mkidxhead.ist -L
+MAKEINDEX := texindy -M lang/latin/utf8.xdy -M hyperxindy.xdy
+#MAKEINDEX := makeindex -s mkidxhead.ist -L
 
 STYLEFILES    := imeusp.sty plainnat-ime.bbx plainnat-ime.cbx
 OTHERTEXFILES := $(wildcard *.tex) $(STYLEFILES)
