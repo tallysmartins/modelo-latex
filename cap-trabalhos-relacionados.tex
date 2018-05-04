@@ -4,33 +4,50 @@
 
 Este capítulo levanta consideraçãoes sobre alguns trabalhos interpretados como
 relevantes na análise de dados de movimentaçao e também alguns sistemas existentes
-para controle do tráfego. De forma geral, esses trabalhos proporcionaram uma base
-para compor um conhecimento maior sobre visualização de dados do tráfego de veículos.
+para controle do tráfego de veículos. De forma geral, tais trabalhos proporcionaram uma base
+para compor um conhecimento maior sobre visualização de dados do trânsito.
 
-\section{Sistemas para Controle do Tráfego de Veículos}
+\section{Dados de Movimentação}
+Como sabemos, existe uma variedade de informações geradas que grava a movimentação
+de vários objetos como carros, navios, aeronaves e até animais. Neste trabalho
+focamos em dados simulados 
+
+\subsection{Sistemas para Controle do Trânsito}
 
 Citar trabalhos e pesquisar algumas ferramentas que são utilizadas nesse sentido.
 Falar com a scipopulis, etc... 
 
-\section{Visualização do Tráfego de Veículos}
+\subsection{Visualização do Tráfego de Veículos}
 
 Dois outros trabalhos foram encontrados, eles abordam diferentes visualizações
 para também encontrar padrões no trânsito. blá blá
 
-\subsection{Visualizing interchange patterns in massive movement data}
+\textbf{Visualizing interchange patterns in massive movement data}
 
-\subsection{Mapping to Cells: A Simple Method to Extract Traffic Dynamics from Probe Vehicle Data}
+\textbf{Mapping to Cells: A Simple Method to Extract Traffic Dynamics from Probe Vehicle Data}
 
-\section{Visualização do Tráfego Aéreo}
+\subsection{Visualização do Tráfego Aéreo}
 
--> Resumo Rápido: O artigo traz novas abordagens para a aplicação de técnicas de visualização
-para análise de dados do tráfego aéreo. Ele aborda novas fórmulas de se aplicar o bundling,
-density maps e animação que outros autores não abordavam. Ele detalha como as técnicas
-são aplicadas e que tipo de padrões elas permitem visualizar. Outro ponto importante é
-que são afirmados que outros sistemas de controle do tráfego aéreo não mostram as informações
-como o sistema proposto (que mostra tanto a posição instantânea como durante o tempo). O seu sistema
-possui alguns parâmetros configuráveis que permitem uma exploração dos dados que
-trazem vários insights para visualização de padrões e outliers nos dados.
+  Por razões críticas, a movimentação de aeronaves no tráfego aéreo é monitorada
+  com grande cuidado. Sistemas avançados de localização registram em tempo real
+  a posição de aeronaves que sobrevoam o planeta. Esses sistemas podem ainda
+  conter outras informações como direção, altitude, velocidade, temperatura, pressão
+  e diversos outros atributos ao longo do trajeto. O tráfego aéreo é de certa
+  forma similar à movimentação de veículos sobre as vias da cidade e visualizar
+  essas informações traz também grandes desafios.
+
+  cite{Alex}, mostra um trabalho onde ele descreve uma visualização que utiliza
+  técnicas baseadas em imagem para análise exploratória de uma grande massa
+  de dados do tráfego. Sua análise inclui a utilização de três técnicas, bundling,
+  density maps e animações. Ele argumenta que, com essas técnicas, é possível visualizar
+  uma grande quantidade de dados, tanto a posição instantânea dos aviões como também
+  sua dinâmica ao longo do tempo, sem uma grande oclusão da visualização. 
+  Dentre os resultados apresentados está a detecção de \textit{outliers}, padrões
+  e congestionamentos durante vôos.
+
+  
+  O seu sistema possui alguns parâmetros configuráveis que permitem uma exploração dos dados que
+  trazem vários insights para visualização de padrões e outliers nos dados.
 
 -> Highlights:
   - exploração das informações disponíveis e detecção de outliers
@@ -47,11 +64,7 @@ trazem vários insights para visualização de padrões e outliers nos dados.
   - não implementa queries para filtros (e.g. aviões de altitude maior que X)
   - Suas trilhas apresentam apenas três atributos (velocidade, direção, altura)
 
-\section{Outras análises de movimentação}
+\subsection{Outras análises de movimentação}
 
 \section{Conclusão}
-
-
-
-
 
