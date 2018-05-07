@@ -101,7 +101,7 @@
 
 \NewDocumentCommand{\orientador}{O{masc} m}{
   \ifstrequal{#1}{masc}
-    {\gdef\@labelorientador{Orientador}}
+    {\gdef\@labelorientador{Professor}}
     {\gdef\@labelorientador{Orientadora}}
   \gdef\@orientador{#2}
 }
@@ -133,7 +133,7 @@
   % http://guides.lib.berkeley.edu/dissertations_theses
   % https://www.grad.ubc.ca/handbook-graduate-supervision/graduate-thesis
   % Como "Thesis" é o nome genérico, vamos usar para mestrado e doutorado
-  \renewcommand*{\@nometrabalho}{Tese}
+  \renewcommand*{\@nometrabalho}{Relatório}
   \renewcommand*{\@nometrabalhoeng}{Thesis}
   \renewcommand*{\@nometituloeng}{Doctor}
   \renewcommand*{\@grau}{Doutorado}
@@ -150,7 +150,7 @@
 
 \NewDocumentCommand{\dissertacao}{O{masc}}{
   % Veja observação acima
-  \renewcommand*{\@nometrabalho}{Dissertação}
+  \renewcommand*{\@nometrabalho}{Relatório}
   \renewcommand*{\@nometrabalhoeng}{Thesis}
   \renewcommand*{\@nometituloeng}{Master}
   \renewcommand*{\@grau}{Mestrado}
@@ -190,7 +190,7 @@
 \newcommand*{\@titulopt}{\@title}
 \newcommand*{\@tituloeng}{\@title}
 
-\newcommand*{\@nometrabalho}{Dissertação}
+\newcommand*{\@nometrabalho}{Relatório}
 \newcommand*{\@nometrabalhoeng}{Thesis}
 \newcommand*{\@nometitulo}{Mestre}
 \newcommand*{\@nometituloeng}{Master}
@@ -204,11 +204,9 @@
 
 \newcommand*{\@textocapa}[1][port] {%
   \ifstrequal{port}{#1}{%
-    \@nometrabalho{} apresentada ao\\[-0.25cm]
-    Instituto de Matemática e Estatística\\[-0.25cm]
+    Relatório apresentado na\\[-0.25cm]
+    disciplina MAC5856 - Desenvolvimento de Software Livre\\[-0.25cm]
     da Universidade de São Paulo\\[-0.25cm]
-    para obtenção do título de\\[-0.25cm]
-    \@nometitulo{} em Ciências%
   }{%
     \@nometrabalhoeng{} presented to the \\[-0.25cm]
     Institute of Mathematics and Statistics\\[-0.25cm]
@@ -236,8 +234,8 @@
 
 \newcommand*{\@textorostoprovisoria}[1][port] {%
   \ifstrequal{port}{#1}{%
-    Esta é a versão original da \MakeLowercase{\@nometrabalho} elaborada
-    \@porquem{} \@author, tal como submetida à Comissão Julgadora.%
+    Esta é a versão original do \MakeLowercase{\@nometrabalho} elaborado
+    \@porquem{} \@author, tal como submetido ao professor responsável.%
   }{%
     This is the original version of the \MakeLowercase{\@nometrabalhoeng} prepared
     by the candidate \@author, as submitted to the Examining Committee.%
@@ -443,11 +441,7 @@
 
         \normalsize
 
-        \@apoiocapa
-
         \vspace*{1cm plus 1cm minus 0.3cm}
-
-        \@localdefesa
 
         \@datacapa
 
