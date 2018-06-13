@@ -1,3 +1,26 @@
-\chapter{Como lidar com o código?}
+\section{Como lidar com o código?}
 \label{cap:como-lidar-com-codigo}
+
+ O fato de o projeto ser dividio em várias frentes abre um
+ leque maior de possibilidades. Desenvolvedores com maior afinidade
+ por desenvolvimento de interfaces, html, css e javascript podem começar o
+ contato pelo repositório do frontend, por exemplo, já usuários com mais
+ afinidade em backend, rotas, controllers, modelos, podem explorar primeiro
+ o repositório do servidor.
+
+ O projeto é uma aplicação web simples, com rotas para cadastro e recuperação
+ de objetos. A maior complexidade é entender a relação entre esses objetos. Para
+ compreende-los melhor, o desenvolvedor pode recorrer a leitura do 
+ arquivo \textbf{priv/repo/seeds.exs} que contém dados exemplo para popular
+ o banco de dados. Olhando esse arquivo é possível
+ ter uma visão melhor de como são criados os objetos e como eles se relacionam.
+ Além disso, a suíte de testes automatizados do projeto descrevem os vários
+ cenários e apresentam de forma mais clara a lógica e restrições por trás do código.
+
+ Por outro lado, existe uma complexidade maior ao tentar entender o código do
+ Runner que escuta por novos Jobs, executa-os em containers Docker e retorna
+ os resultados para o servidor. Existem alguns detalhes que requerem um maior
+ conhecimento de como o Docker funciona, seus comandos e suas flags. Este definitivamente
+ não é o local ideal para começar a explorar e contribuir para o projeto.
+
 

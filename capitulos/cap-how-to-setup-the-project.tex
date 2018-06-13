@@ -1,3 +1,23 @@
-\chapter{Como configurar seu ambiente de trabalho?}
+\section{Como configurar seu ambiente de trabalho?}
 \label{cap:como-configurar-seu-ambiente}
 
+ Para configurar o ambiente de trabalho é recomendado a utilização de sistema
+ operacional baseado em GNU Linux, onde as dependências são facilmente configuradas.
+ Como o projeto é dividido em três principais sub repositórios, back-end, front-end e
+ runner, a configuração de cada um pode ser feita isoladamente seguindo as especificações
+ do README.
+
+ No entanto, algumas especificações de versões que não são explicitamente
+ informadas no repositório tiveram que ser "adivinhadas". Para trabalhar no
+ período da disciplina, foram utilizadas as pacotes padrão da distribuição
+ Debian Jessie, que não apresentaram nenhum problema de compatibilidade com o projeto:
+
+ \textbf{Backend}: Elixir 1.6, PostgreSQL 9.6
+
+ \textbf{Frontend}: Node v8.10.0, React 16.2.0
+
+ \textbf{Runner}: Elixir 1.6, Docker 18.0 + Docker-Compose 1.8
+
+ O ecossistema Elixir não é como o do Java, ou R, que possuem grandes IDEs, então
+ o desenvolvedor deve buscar um editor de texto de sua preferência para adentrar
+ no código. 

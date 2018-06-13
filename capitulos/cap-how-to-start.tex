@@ -1,2 +1,32 @@
-\chapter{Como começar?}
+\section{Como começar?}
 \label{cap:como-comecar}
+
+ Para iniciar no projeto, o primeiro passo é ter um conhecimento básico de aplicações
+ web e programação Elixir e React, já que este é o ambiente geral da ferramenta. O projeto
+ está dividido em quatro sub-repositórios, e é necessário um certo nível de compreensão
+ de cada um deles para iniciar. É possível que um contribuidor consiga fazer
+ colaborações isoladas para cada uma das partes porém, para contribuições mais complexas é necessário
+ ter todo o ambiente configurado.  O projeto se divide principalmente em:
+
+ \textbf{Backend}: Aplicação Elixir construida com framework Phoenix (similar ao rails) que
+ fornece uma API para consulta dos dados dos repositórios cadastrados, jobs executados
+ e resultados dos jobs.
+
+ \textbf{Frontend}: Aplicação React que consome a API do servidor e apresenta
+ a página HTML iterativa para exploração dos dados.
+
+ \textbf{Runner}: É uma espécie de worker. Uma aplicação Elixir que consome a API
+ do servidor e fica encarregada de "ouvir" novos Jobs cadastrados, executá-los
+ e retornar seus resultados.
+
+ Para nenhum dos repositórios existe ainda uma lista de tarefas publicamente definida, ou
+ um mapeamento de issues, por isso é necessário que as pessoas entrem em contato com os mantenedores
+ por algum dos canais de comunicação (ver Cap. \ref{cap:como-se-comunicar}) para
+ manifestarem sua intenção em contribuir e discutirem como o podem fazer.
+
+ Usuários que gostam de investigar o código e executar localmente para conhecer
+ e entender o que está por trás não devem ter muitos problemas para executar
+ o projeto com as instruções dadas no README.md, na página do Github de cada
+ repositório. No entanto, precisam entender o básico de aplicações web Elixir
+ e React para, no mínimo, instalarem as dependências e executarem o software
+ localmente com todos os testes passando.
